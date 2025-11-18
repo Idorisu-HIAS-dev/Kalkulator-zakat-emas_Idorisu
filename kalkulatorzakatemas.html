@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kalkulator Zakat Emas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        /* background: #f1f1f1; */
+        background-image: url('goldbg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        min-height: 100vh;
+        margin: 0;
+
+    }
+
+    .kontainer {
+        background: white;
+        max-width: 340px;
+        margin: 35px auto;
+        padding: 22px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    input,
+    button {
+        margin: 7px 0;
+        padding: 8px;
+        font-size: 1em;
+        width: 85%;
+        border-radius: 4px;
+    }
+
+    button {
+        background: #4097db;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    #hasil {
+        margin-top: 13px;
+        font-weight: bold;
+        color: #22558a;
+    }
+
+    #history {
+        margin-top: 10px;
+        text-align: left;
+        font-size: .96em;
+        color: #444;
+    }
+
+    h3 {
+        margin-top: 18px;
+        margin-bottom: 2px;
+        color: #22558a;
+        font-size: 1.09em;
+    }
+</style>
+
+<body>
+    <div class="kontainer">
+        <h2>Kalkulator Zakat Emas</h2>
+        <input type="number" id="emas-gram" placeholder="Jumlah emas (gram)" min="0">
+        <button id="hitung">Hitung Zakat</button>
+        <div id="hasil"></div>
+        <h3>Riwayat Perhitungan</h3>
+        <ul id="history"></ul>
+    </div>
+    <script src="/zakat.js"></script>
+
+</body>
+
+</html>
